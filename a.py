@@ -15,8 +15,8 @@ v = np.linspace(-1, 1, 100)
 U, V = np.meshgrid(u, v)
 
 # Primera figura: Círculo.
-x1 = 3 * np.outer(np.cos(u), np.sin(v))
-y1 = 3 * np.outer(np.sin(u), np.sin(v))
+x1 = 3.5 * np.outer(np.cos(u), np.sin(v))
+y1 = 3.5 * np.outer(np.sin(u), np.sin(v))
 z1 = np.outer(0,0)
 
 # Segunda figura: Hiperboloide de una hoja.
@@ -32,7 +32,7 @@ z3 = 2.9 * np.cosh(V) + 1.1
 # Cuarta figura: Hiperboloide de dos hojas.
 x4 = 3.8 * V * np.cos(U)
 y4 = 3.8 * V * np.sin(U)
-z4 = 9 * np.sqrt(1 - V**2) + 5.6
+z4 = 5.6 * np.sqrt(1 - V**2) + 5.6
 
 #  Métodos que crean la figura tridimensional en base a las ecuaciones implicitas dadas por la parametrización, agregandole un tono magma en su estética superficial.
 ax.plot_surface(x1, y1, z1, cmap='magma')
