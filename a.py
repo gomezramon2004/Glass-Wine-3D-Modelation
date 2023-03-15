@@ -22,17 +22,17 @@ z1 = np.outer(0,0)
 # Segunda figura: Hiperboloide de una hoja.
 x2 = 0.2 * np.cosh(V) * np.cos(U)
 y2 = 0.2 * np.cosh(V) * np.sin(U)
-z2 = 1.6 * np.sinh(V) + 1.9
+z2 = 1.8 * np.sinh(V) + 2.1
 
 # Tercera figura: Elipsoide.
 x3 = 3.25 * np.sinh(V) * np.cos(U)
 y3 = 3.25 * np.sinh(V) * np.sin(U)
-z3 = 2.9 * np.cosh(V) + 0.9
+z3 = 2.9 * np.cosh(V) + 1.1
 
 # Cuarta figura: Hiperboloide de dos hojas.
 x4 = 3.8 * V * np.cos(U)
 y4 = 3.8 * V * np.sin(U)
-z4 = 9 * np.sqrt(1 - V**2) + 5.4
+z4 = 9 * np.sqrt(1 - V**2) + 5.6
 
 #  Métodos que crean la figura tridimensional en base a las ecuaciones implicitas dadas por la parametrización, agregandole un tono magma en su estética superficial.
 ax.plot_surface(x1, y1, z1, cmap='magma')
